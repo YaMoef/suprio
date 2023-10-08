@@ -1,0 +1,98 @@
+.main-content {
+    height: 100vh;
+}
+
+@keyframes rainbowBackground {
+    0% {
+        background-color: #ff0000;
+    }
+
+    16.666% {
+        background-color: #ff8000;
+    }
+
+    33.333% {
+        background-color: #ffff00;
+    }
+
+    50% {
+        background-color: #80ff00;
+    }
+
+    66.666% {
+        background-color: #00ff80;
+    }
+
+    83.333% {
+        background-color: #0080ff;
+    }
+
+    100% {
+        background-color: #8000ff;
+    }
+}
+
+.container-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent white background for main content */
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    height: fit-content;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ff3399;
+    /* Pink header background */
+    color: #ffffff;
+    /* White text color */
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content {
+    font-size: 18px;
+    color: #333;
+}
+
+.button {
+    animation: rainbowBackground 5s infinite linear;
+    background-color: #ff66cc;
+    /* Lighter pink button color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #ff3399;
+    /* Darker pink color on hover */
+}
+
+footer {
+    text-align: center;
+    background-color: #ff3399;
+    /* Pink footer background */
+    color: #ffffff;
+    /* White text color */
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
